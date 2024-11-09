@@ -26,12 +26,12 @@
    "curl -sfL https://get.k3s.io | sh -"
    Verify:
    "sudo kubectl get nodes"
-
-5. Deploy nginx containers on Kubernetes pods:
+   
+6. Deploy 2 replicas of nginx containers on Kubernetes pods:
    use the configuration file attached to this Git repository
    "sudo kubectl apply -f nginx-deployment.yaml"
 
-6. Install helm, and Prometheus and Grafana with helm and set them:
+7. Install helm, and Prometheus and Grafana with helm and set them:
    "sudo snap install helm --classic"
    "helm repo add prometheus-community https://prometheus-community.github.io/helm-charts"
    "helm repo add grafana https://grafana.github.io/helm-charts"
